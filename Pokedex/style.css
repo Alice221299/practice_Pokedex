@@ -87,6 +87,17 @@ main {
     padding: 40px;
 }
 
+.table-element h3 {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+.table-element p {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
 
 .pie{
     background-color: white;
