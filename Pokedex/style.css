@@ -41,13 +41,14 @@ main {
     display: flex;
     gap: 60px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .main-pokemon--title {
     display: flex;
     background-color: white;
     border-radius: 15px;
-    padding: 10px 10%;
+    padding: 10px 20%;
     justify-content: center;
     gap: 20px;
 }
@@ -108,6 +109,7 @@ main {
     display: flex;
     gap: 80px;
     justify-content: center;
+    flex-wrap: wrap;
 
 }
 .subtitle{
@@ -120,6 +122,7 @@ main {
     display: flex;
     gap: 80px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .poke {
@@ -136,4 +139,56 @@ main {
 
 .poke:hover{
 background-color:var(--terciary-color);
+}
+
+
+@media (max-width: 700px) {
+    .header-pok {
+        display: flex;
+        justify-content: center;
+    }
+
+    .picture {
+        gap: 0;
+        justify-content: center;
+        margin: 0 25%;
+    }
+
+    .imagenes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 60px;
+    }
+    
+    .main-table {
+        display: flex;
+        flex-direction: column;
+        padding: 60px 40px;
+        position: relative;
+    }
+
+    .table-element {
+        display: flex;
+        gap: 50px;
+        padding: 10px;
+    }
+    .pokemon-picture {
+        position: absolute;
+        height: 300px;
+        z-index: 1;
+        bottom: 140px;
+    }
+    .main-pokemon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        gap: 260px;
+    }
+
+    .subtitle {
+        padding: 0 40px 40px;
+    }
 }
